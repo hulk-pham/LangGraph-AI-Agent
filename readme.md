@@ -5,11 +5,16 @@ A project for building conversational AI workflows using Langgraph.
 ## Installation
 
 ```bash
-Clone the repository
+## Clone the repository
 git clone https://github.com/hulk-pham/LangGraph-AI-Agent.git
-cd langgraph-project
-Install dependencies
-pip install -r requirements.txt
+cd ./LangGraph-AI-Agent
+
+# Create virtual environment
+python3.12 -m venv .venv 
+source .venv/bin/activate
+
+# Install dependencies
+pip install -e .  
 ```
 
 ```bash
@@ -20,13 +25,6 @@ export OPENAI_API_KEY="your-api-key"
 ## Usage
 
 ```bash
-# Create virtual environment
-python3.12 -m venv .venv 
-source .venv/bin/activate
-
-# Install dependencies
-pip install -e .  
-
 # Set environment variables
 export PATH=$PATH:/usr/local/mysql/bin
 
